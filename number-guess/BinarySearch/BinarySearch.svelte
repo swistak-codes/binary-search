@@ -4,7 +4,7 @@
 	import HigherButton from "../Buttons/HigherButton.svelte";
 	import OkButton from "../Buttons/OkButton.svelte";
 	import ResetButton from "../Buttons/ResetButton.svelte";
-	import Chart from "./Chart";
+	import Chart from "./Chart.svelte";
 	import { currentGuess, isGuessed, count } from "../store.js";
 </script>
 
