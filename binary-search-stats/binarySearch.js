@@ -6,7 +6,7 @@
  */
 function binarySearchCounter(lowerBound, upperBound, toFind) {
   // licznik w którym przechowamy liczbę trafień
-  let counter = 0;
+  let counter = 1;
 
   // rekurencyjna funkcja do szukania liczby
   function binarySearch(start, end) {
