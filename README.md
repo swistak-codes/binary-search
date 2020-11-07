@@ -22,7 +22,7 @@ npm run start:dev
 
 ### binary-search-stats
 
-App for generating CSVs with statistics about binary search. Runs in two modes — collecting how many comparisons is needed to find each number in a sequence or collecting average number of comparisons for different sizes of sets.
+App for generating CSVs with statistics about binary search. Runs in two modes — collecting how many comparisons is needed to find each number in a sequence or collecting average number of comparisons for different sizes of sets. Can be checked here: https://repl.it/@tswistak/binary-search-stats#index.js (index.js slightly modified to allow running from repl.it environment)
 
 Running instructions:
 
