@@ -8,6 +8,7 @@
   } from "../store.js";
 
   const handleResetClick = () => {
+    // przywracamy wartości początkowe
     $isGuessed = false;
     $count = 0;
     $currentLowerBound = 0;

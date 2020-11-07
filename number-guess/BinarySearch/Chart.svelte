@@ -7,6 +7,11 @@
     currentGuess
   } from "../store.js";
 
+  /**
+   * Funkcja generująca dane do wyświetlenia przez wykres
+   * @param from - początek zakresu dla którego wartość wynosi 1
+   * @param to - koniec zakresu dla którego wartość wynosi 1
+   */
   const dataGenerator = (from, to) => {
     const result = [];
     for (let i = 0; i <= 100; i++) {
@@ -19,6 +24,9 @@
     return result;
   };
 
+  /**
+   * Funkcja generująca zbiory danych dla naszego wykresu
+   */ 
   const generateDataSets = () => [
     {
       label: "Mniejsze",
@@ -30,7 +38,8 @@
     },
     {
       label: "Aktualny strzał",
-      data: [...Array($currentGuess), 1, ...Array(100 - $currentGuess)],
+      // dla aktualnego trafu interesuje nas tylko 1 wskazana wartość
+      data: [{ x: $currentGuess, y: 1 }],
       borderColor: "red",
       backgroundColor: "red",
       borderWidth: 1,
@@ -49,12 +58,13 @@
   let canvas;
   let chart;
 
+  // narysować wykres mozemy dopiero po zamontowaniu komponentu na stronie
   onMount(() => {
     const ctx = canvas.getContext("2d");
     chart = new Chart(ctx, {
       type: "line",
       data: {
-        labels: [...Array(101).keys()],
+        labels: [...Array(101).keys()], // generujemy w ten sposób tablicę liczb od 0 do 100
         datasets: generateDataSets()
       },
       options: {
@@ -89,6 +99,7 @@
     });
   });
 
+  // wywołujemy aktualizację danych na wykresie z kazdą zmianą wartości aktualnego trafu
   currentGuess.subscribe(() => {
     if (chart) {
       chart.data.datasets = generateDataSets();

@@ -3,6 +3,7 @@
   import { isGuessed } from "../store.js";
 
   const handleYesClick = () => {
+    // oznaczamy, ze liczba została trafiona
     $isGuessed = true;
   };
 </script>

@@ -2,6 +2,7 @@
   import BinarySearch from "./BinarySearch/BinarySearch.svelte";
   import Button from "./Buttons/Button.svelte";
 
+  // przechowujemy, czy rozpoczęliśmy juz grę, aby nie wyświetlać wcześniej trafu
   let isStarted = false;
 </script>
 
