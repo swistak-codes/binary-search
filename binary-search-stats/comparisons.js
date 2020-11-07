@@ -19,7 +19,7 @@ function doComparisonsCount(start = 1, end = 100) {
   }
 
   // przerabiamy naszą tablicę dwuwymiarową na zapis w postaci CSV, aby mozna było łatwo zaimportować wartości do arkusza kalkulacyjnego
-  const csv = results.map(x => x.join(',')).join('\n');
+  const csv = results.map(x => x.join(';')).join('\n');
 
   // zapisujemy plik
   fs.writeFile('comparisons.csv', csv, 'utf8', (error) => {

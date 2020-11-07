@@ -34,7 +34,7 @@ function doAveragesCount(start = 5, end = 10000) {
   }
 
   // przerabiamy naszą tablicę dwuwymiarową na zapis w postaci CSV, aby mozna było łatwo zaimportować wartości do arkusza kalkulacyjnego
-  const csv = results.map(x => x.join(',')).join('\n');
+  const csv = results.map(x => x.join(';')).join('\n');
 
   // zapisujemy plik
   fs.writeFile('averages.csv', csv, 'utf8', (error) => {
