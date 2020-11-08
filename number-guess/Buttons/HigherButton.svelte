@@ -1,6 +1,15 @@
 <script>
   import Button from "./Button.svelte";
-  import { currentLowerBound, currentGuess, isGuessed, count } from "../store.js";
+  import {
+    currentLowerBound,
+    currentUpperBound,
+    currentGuess,
+    isGuessed,
+    count
+  } from "../store.js";
+
+  // blokujemy przycisk jeśli juz odgadnięto, albo nie da się bardziej zawęzić
+  $: isDisabled = $isGuessed || $currentUpperBound === $currentGuess;
 
   const handleHigherClick = () => {
     // przesuwamy początek zakresu na aktualny traf
@@ -10,6 +19,6 @@
   };
 </script>
 
-<Button onClick={handleHigherClick} disabled={$isGuessed}>
+<Button onClick={handleHigherClick} disabled={isDisabled}>
   Jest większa
 </Button>

@@ -26,7 +26,8 @@
 
   /**
    * Funkcja generująca zbiory danych dla naszego wykresu
-   */ 
+   */
+
   const generateDataSets = () => [
     {
       label: "Mniejsze",

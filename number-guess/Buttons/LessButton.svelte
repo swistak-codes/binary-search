@@ -1,6 +1,15 @@
 <script>
   import Button from "./Button.svelte";
-  import { currentUpperBound, currentGuess, count, isGuessed } from "../store.js";
+  import {
+    currentLowerBound,
+    currentUpperBound,
+    currentGuess,
+    isGuessed,
+    count
+  } from "../store.js";
+
+  // blokujemy przycisk jeśli juz odgadnięto, albo nie da się bardziej zawęzić
+  $: isDisabled = $isGuessed || $currentLowerBound + 1 === $currentGuess;
 
   const handleLessClick = () => {
     // przesuwamy koniec zakresu na aktualny traf
