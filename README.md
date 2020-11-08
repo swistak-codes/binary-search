@@ -32,3 +32,19 @@ npm install
 npm run comparisons 0 100
 npm run averages 5 10000
 ```
+
+### interpolation-search-stats
+
+App for generating CSVs with statistics about interpolation search. Runs similarly as binary-search-stats. However, here as an additional argument we're providing the name of number generator. Available ones are: oneToN, arithmetic, geometric, random, gaussian.
+
+Running instructions:
+
+```bash
+cd ./binary-search-stats
+npm install
+npm run comparisons oneToN
+npm run comparisons arithmetic
+npm run comparisons geometric
+npm run comparisons random
+npm run comparisons gaussian
+```

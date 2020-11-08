@@ -1,5 +1,5 @@
 /**
- * Generator kolejnych liczb ciągu geometrycznego określonego wzorem a_n = 3 * a_{n-1}
+ * Generator kolejnych liczb ciągu geometrycznego określonego wzorem a_n = 2 * a_{n-1}
  * @param elements - liczba elementów do wygenerowania
  */
 function geometric(elements = 50) {
