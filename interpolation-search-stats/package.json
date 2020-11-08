@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "comparisons": "node index.js comparisons",
-    "averages": "node index.js averages"
+    "comparisons": "node index.js comparisons"
   },
   "dependencies": {}
 }

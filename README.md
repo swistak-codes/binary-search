@@ -35,7 +35,7 @@ npm run averages 5 10000
 
 ### interpolation-search-stats
 
-App for generating CSVs with statistics about interpolation search. Runs similarly as binary-search-stats. However, here as an additional argument we're providing the name of number generator. Available ones are: oneToN, arithmetic, geometric, random, gaussian.
+App for generating CSVs with statistics about interpolation search. Runs similarly as binary-search-stats. However, here as an additional argument we're providing the name of number generator. Available ones are: oneToN, arithmetic, geometric, random, gaussian. Can be checked here: https://repl.it/@tswistak/interpolation-search-stats#index.js
 
 Running instructions:
 
