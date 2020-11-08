@@ -19,6 +19,6 @@
   };
 </script>
 
-<Button onClick={handleLessClick} disabled={$isGuessed}>
+<Button onClick={handleLessClick} disabled={isDisabled}>
   Jest mniejsza
 </Button>
