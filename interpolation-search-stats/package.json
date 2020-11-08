@@ -1,0 +1,10 @@
+{
+  "name": "interpolation-search-stats",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "comparisons": "node index.js comparisons",
+    "averages": "node index.js averages"
+  },
+  "dependencies": {}
+}

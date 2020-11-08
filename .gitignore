@@ -88,5 +88,5 @@ typings/
 .dynamodb/
 
 public/
-comparisons.csv
-averages.csv
+comparisons*.csv
+averages*.csv
