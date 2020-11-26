@@ -1,6 +1,6 @@
 # Binary search
 
-Repository with code for [blog](https://swistak.codes) entry about binary search and other search methods in list structure.
+Repository with code for [blog](https://swistak.codes) entry about binary search and other search methods in list structure. You can find whole article here: https://swistak.codes/wyszukiwanie-w-listach/
 
 Comments are in Polish, since blog article is also in Polish.
 
